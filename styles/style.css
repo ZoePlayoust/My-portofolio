@@ -1,0 +1,13 @@
+:root{
+    --primary-color : #1f56ef;
+    --secondary-color : #0f1419;
+    --box-shadow-black : 10px 10px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: poppins;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/*font-family: 'Poppins', sans-serif;
