@@ -1,13 +1,14 @@
 :root{
     --primary-color : #0f1419;
     --secondary-color : #1f56ef;
-    --box-shadow-black : 10px 10px 16px rgba(0, 0, 0, 0.1);
+    --box-shadow-black : rgb(37 39 89 / 8%) 0px 8px 8px 0;
     --font-default: 'Poppins', sans-serif;
-
 }
+
 h1, 
 h2{
   font-family: var(--font-default);
+  
 }
 
 h1 {
@@ -19,57 +20,115 @@ h1 {
 h2{
   font-weight: 400;
   font-size : 20px !important;
-  line-height: 24px;
+  line-height: 1.4 !important;
   color: var(--primary-color);
   opacity: 0.5;
 }
+.button{
+  display: block;
+font-size: 20px;
+background-color: #e84a5f;
+text-align: center;
+color: white;
+text-decoration: none;
+padding: 6px 20px;
+box-shadow: var(--box-shadow-black);
+border-radius: 4px;
+}
+.button:hover {
+color: white;
+background-color: #ff847c;}
 
 .container{
   margin-top:20px;
-  background-color: linear-gradient(45DEG,#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
 }
 .self-portrait{
   border-radius: 150px;
   width: 80px;
   display: block;
   margin: 0 auto;
+  margin-top: 19px;
 }
-.presentation-col{
-  margin-top: 52px !important;
-padding-left:0 !important;
+#col-presentation{
+margin-top: 34px;
+padding-left: 10px;
 }
-.col-2{
-padding: 0 !important;
-}
+
 
 .icon{
-  font-size: 25px;
+  font-size: 40px;
   padding-right: 9px;
 }
-.hire-button {
-  background-color: var(--secondary-color);
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  padding: 4px 15px;
- box-shadow: var(--box-shadow-black);
- border-radius: 4px
- ;
-}
-
 .github{
   color: var(--primary-color);
+}
+.github:hover{
+  opacity: 0.6;
 }
 
 .linkedin{
   color: #0a66c2;
 }
+.linkedin:hover{
+  color: #08417a;
+}
 
 .twitter{
   color: #1a8cd8;
 }
+.twitter:hover{
+  color: #0d4f7a;
+}
 
-.instagram{
-  color : linear-gradient (45DEG,#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+.instagram {
+ color: #505cca;
+}
+.instagram:hover {
+ color: #f14d59;
+}
+
+
+@media (max-width : 1000px){
+  h2{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width : 762px){
+  h2{
+    font-size: 15px !important;
+  }
+  .icon{
+    font-size: 30px;
+  }
+.button{
+font-size: 15px;
+padding: 5px 10px;
+}
+}
+
+@media (max-width : 576px){
+  h2{
+   font-size:12px !important;
+   padding-bottom: 0px;
+  }
+.icon{
+    font-size: 20px;
+    padding-right: 0;
+  }
+.col-8{
+  margin-left: 25px;
+}
+
+.button{
+font-size: 15px;
+padding: 0px 0px;
+width: 50px;
+ margin: 0 auto;
+}
+.icon-bar {
+  text-align: center;
+}
+
 }
 /*font-family: 'Poppins', sans-serif;
