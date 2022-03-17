@@ -24,6 +24,7 @@ h2{
   color: var(--primary-color);
   opacity: 0.5;
 }
+
 .button{
   display: block;
 font-size: 20px;
@@ -37,7 +38,7 @@ border-radius: 4px;
 }
 .button:hover {
 color: white;
-background-color: #ff847c;}
+background-color: var(--primary-color);}
 
 .container{
   margin-top:20px;
@@ -87,11 +88,39 @@ padding-left: 10px;
  color: #f14d59;
 }
 
+.homepage-navigation{
+  margin-top: 18px;
+}
 
+.nav-bar-text{
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+ color: var(--primary-color);
+ 
+}
+.nav-bar-icon{
+  font-size: 22px;
+   color: var(--primary-color);
+}
+.nav-bar-icon:hover{
+  color: #e84a5f;
+}
+
+.hometab{
+  padding-top: 30px;
+ 
+}
+.tab{
+ text-decoration: none;
+}
 @media (max-width : 1000px){
   h2{
     text-align: center;
     padding-bottom: 10px;
+  }
+  .nav-bar-text{
+    font-size: 14px;
   }
 }
 @media (max-width : 762px){
@@ -105,6 +134,11 @@ padding-left: 10px;
 font-size: 15px;
 padding: 5px 10px;
 }
+.nav-bar-icon{
+  font-size: 30px;
+   color: var(--primary-color);
+}
+
 }
 
 @media (max-width : 576px){
@@ -128,6 +162,9 @@ width: 50px;
 }
 .icon-bar {
   text-align: center;
+}
+.homepage-navigation{
+  margin-top: 0px;
 }
 
 }
