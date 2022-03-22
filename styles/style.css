@@ -82,7 +82,7 @@ padding-left: 10px;
 }
 .nav-bar-icon{
   font-size: 28px;
-   color: var(--primary-color);
+  color: var(--primary-color);
 }
 .nav-bar-icon:hover{
   color: #e84a5f;
@@ -125,11 +125,15 @@ padding: 5px 10px;
 }
 .nav-bar-icon{
   font-size: 30px;
-  color: var(--primary-color);
+  
+}
+.icon-bar{
+  text-align: right;
 }
 .homepage-navigation{
   margin-top : 6px;
 }
+
 }
 
 @media (max-width : 576px){
