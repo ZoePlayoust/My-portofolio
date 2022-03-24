@@ -97,6 +97,21 @@ h2 {
   width: 140px;
   display: block;
 }
+.mini-view:hover {
+  border-radius: 100%;
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1.5s;
+  animation-timing-function: linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .project-presentation {
   font-family: var(--font-default);
