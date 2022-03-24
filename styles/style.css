@@ -18,7 +18,7 @@ h1 {
 }
 h2 {
   font-weight: 400;
-  font-size: 20px !important;
+  font-size: 25px !important;
   line-height: 1.4 !important;
   color: var(--primary-color);
   opacity: 0.5;
@@ -131,6 +131,17 @@ h2 {
   color: var(--secondary-color);
 }
 
+@media (max-width: 1400px) {
+  .project-presentation {
+    text-align: center;
+    margin: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .image-project {
+    width: 535px;
+  }
+}
 @media (max-width: 1000px) {
   h2 {
     text-align: center;
@@ -145,10 +156,24 @@ h2 {
   .homepage-navigation {
     margin-top: 40px;
   }
+  .image-project {
+    width: 400px;
+  }
+  .mini-view {
+    width: 100px;
+  }
+  .line-1 {
+    margin-top: 30px;
+  }
+  .title {
+    font-size: 18px;
+    margin-left: 5px;
+  }
 }
+
 @media (max-width: 762px) {
   h2 {
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
   .icon {
     font-size: 30px;
@@ -170,7 +195,7 @@ h2 {
 
 @media (max-width: 576px) {
   h2 {
-    font-size: 12px !important;
+    font-size: 15px !important;
     padding-bottom: 0px;
   }
   .icon {
@@ -186,11 +211,21 @@ h2 {
     padding: 0px 0px;
     width: 50px;
     margin: 0 auto;
+    margin-top: 10px;
   }
   .icon-bar {
     text-align: center;
   }
   .homepage-navigation {
     margin-top: 0px;
+  }
+  .visit-button {
+    width: 120px !important;
+    display: block !important;
+    margin-left: 0 auto;
+  }
+  .description {
+    margin-left: 25px;
+    margin-right: 20px;
   }
 }
