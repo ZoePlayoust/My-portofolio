@@ -23,7 +23,12 @@ h2 {
   color: var(--primary-color);
   opacity: 0.5;
 }
-
+ul {
+  list-style: none;
+  font-family: var(--font-default);
+  line-height: 2;
+  margin-left: 0;
+}
 .button {
   display: block;
   font-size: 20px;
@@ -50,9 +55,20 @@ h2 {
   margin: 0 auto;
   margin-top: 19px;
 }
+.self-portrait-about {
+  border-radius: 150px;
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 19px;
+}
 #col-presentation {
   margin-top: 34px;
   padding-left: 10px;
+}
+#col-presentation-about {
+  margin-top: 70px;
+  padding-left: 40px;
 }
 
 .icon {
@@ -77,11 +93,24 @@ h2 {
   font-weight: 500;
   color: var(--primary-color);
 }
+.nav-bar-text-about {
+  font-family: var(--font-default);
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
 .nav-bar-icon {
   font-size: 28px;
   color: var(--primary-color);
 }
+.nav-bar-icon-about {
+  font-size: 30px;
+  color: var(--primary-color);
+}
 .nav-bar-icon:hover {
+  color: #e84a5f;
+}
+.nav-bar-icon-about:hover {
   color: #e84a5f;
 }
 
@@ -100,7 +129,19 @@ h2 {
 .mini-view:hover {
   border-radius: 100%;
   animation-name: rotate;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1.5s;
+  animation-timing-function: linear;
+}
+.mini-view-about {
+  border-radius: 150px;
+  width: 200px;
+  display: block;
+}
+.mini-view-about:hover {
+  border-radius: 100%;
+  animation-name: rotate;
+  animation-duration: 0.5s;
   animation-iteration-count: 1.5s;
   animation-timing-function: linear;
 }
@@ -117,7 +158,7 @@ h2 {
   font-family: var(--font-default);
 }
 .line-1 {
-  margin-top: 60px;
+  margin-top: 85px;
 }
 .title {
   font-size: 25px;
@@ -127,6 +168,12 @@ h2 {
   line-height: 1.7;
   margin-left: 24px;
   opacity: 0.5;
+}
+.line-2-about {
+  line-height: 1.7;
+  margin-left: 24px;
+  opacity: 0.5;
+  font-size: 25px;
 }
 
 .image-project {
@@ -146,6 +193,35 @@ h2 {
   color: var(--secondary-color);
 }
 
+.important {
+  color: var(--secondary-color);
+}
+.about {
+  font-size: 50px;
+}
+.subtitle-about {
+  font-size: 45px;
+  color: var(--primary-color);
+  font-weight: 100;
+  font-family: var(--font-default);
+}
+
+.title-about {
+  font-size: 35px;
+  margin-left: 5px;
+}
+.mini-title-about {
+  font-size: 25px;
+}
+.item-about {
+  font-size: 18px;
+}
+.info-block {
+  margin-left: 201px;
+}
+.degree {
+  max-width: 300px;
+}
 @media (max-width: 1400px) {
   .project-presentation {
     text-align: center;

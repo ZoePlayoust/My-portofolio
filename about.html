@@ -4,9 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Zoé Playoust - Front-End Dev</title>
+    <meta
+      name="description"
+      content="Hi, I am a French Front-end developer based in Marseille. I am looking for thrilling coding opportunities !"
+    />
+    <title> About- me - Front-End Developer - Zoé Playosut</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    Hello It's me
+    <div class="container" id="home">
+      <div class="row">
+        <div class="col-2 ">
+          <div class="homepage-navigation">
+          <a class="tab" href="index.html#home">
+           <div class="hometab"> <i class="fa-solid fa-house nav-bar-icon d-block d-md-none"></i
+            ><span class="nav-bar-text-about d-none d-md-block"> <i class="fa-solid fa-house nav-bar-icon-about"></i
+            > Home</span>
+          </a>
+         </div>
+         <div class="hometab"> <a class="tab" href="index.html#projects">
+            <i class="fa-solid fa-hashtag nav-bar-icon d-block d-md-none"></i
+            ><span class="nav-bar-text-about d-none d-md-block"><i class="fa-solid fa-hashtag nav-bar-icon-about"></i
+            > Projects</span>
+          </a></div>
+         
+          <div class="hometab"><a class="tab" href="about.html">
+            <i class="fa-solid fa-user nav-bar-icon d-block d-md-none"></i
+            ><span class="nav-bar-text-about d-none d-md-block">  <i class="fa-solid fa-user nav-bar-icon-about"></i
+            > About me</span>
+          </a></div>
+          <div class="hometab"><a class="tab" href="about.html#languages">
+            <i class="fa-solid fa-comment nav-bar-icon d-block d-md-none"></i>
+            <span class="nav-bar-text-about d-none d-md-block">  <i class="fa-solid fa-comment nav-bar-icon-about"></i
+            > Languages</span>
+          </a></div>
+          </div>
+        </div>
+        <div class="col-10">
+          <h1 class="about" >Zoé Playoust</h1>
+          <div class="row">
+            <div class="col-4">
+              <img
+                src="/images/hero-square.JPG"
+                alt="Zoé Playoust"
+                class="self-portrait-about fluid"
+              />
+            </div>
+            <div class="col-8" id="col-presentation-about">
+              
+               <span class="subtitle-about">Hi there !</span> <h2 class="work-position"> I am a <span class="important">Front-End developer</span> actually base in France 🇫🇷. I am currently open to new projects ideally in the <span class="important">ecologic</span> or <span class="important">social awareness</span> field. <br>I dicovered coding through the <span class="important">Shecodes </span>program and I have been hooked since day 1. Scroll down to learn more!
+              </h2>
+      
+            </div>
+          </div>
+          <hr />
+          <div class="row" id="projects">
+            <div class="col-2" id="languages"> <img src="images/Language logo.png" alt="language logo" class="fluid mini-view-about"> </div>
+              <div class="col-10 project-presentation ps-3">
+                    <div class="line-1 project-link title-about">🗣️ Languages ✨</div>
+                    <div class="line-2-about">#Multilingual</div>
+              </div>
+              <div class="info-block">
+                <div class="mini-title-about mb-2">Computering languages and frameworks</div>
+                  <ul class="item-about">
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                  <ul class="d-flex justify-content-start ps-0">
+                    <li class="img-fluid"><a href="https://www.shecodes.io/certificates/47e0d54a825ee60cef9462bfe19279a2" target="blank"><img src="images/basic.png" alt="Shecodes basic degree"class="degree"></a></li>
+                     <li class="img-fluid"><a href="https://www.shecodes.io/certificates/fa03e35be134bf95b5b80e0aeca4d7b9" target="blank"><img src="images/plus.png" alt="Shecodes plus degree"class="degree"></a></li>
+                  </ul>
+                <div class="mini-title-about mb-2">Other languages</div>
+                  <ul class="item-about">
+                    <li>🇫🇷 French: langue maternelle</li>
+                    <li>🇬🇧 English: proefficient</li>
+                    <li>🇪🇸 Spanish: intermedia</li>
+                    <li>🇷🇺 Russian: чуть-чуть</li>
+                  </ul>
+              </div>
+            
+          </div>
+
+          <div class="row" id="projects">
+            <div class="col-2"> <img src="images/Language logo.png" alt="language logo" class="fluid mini-view-about"> </div>
+              <div class="col-10 project-presentation ps-3">
+                    <div class="line-1 project-link title-about">🗣️ Languages ✨</div>
+                    <div class="line-2-about">#Multilingual</div>
+              </div>
+              <div class="container mt-3">
+
+              </div>
+            
+          </div>
+      </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>
