@@ -38,6 +38,11 @@ hr {
   color: var(--third-color) !important;
   opacity: 1 !important;
 }
+
+a {
+  text-decoration: none !important;
+  color: var(--primary-color) !important;
+}
 .button {
   display: block;
   font-size: 20px;
@@ -104,7 +109,7 @@ div.row.main-row {
   font-weight: 500;
   color: var(--primary-color);
 }
-.nav-bar-text-about {
+.nav-bar-text-main {
   font-family: var(--font-default);
   font-size: 25px;
   font-weight: 500;
@@ -114,14 +119,14 @@ div.row.main-row {
   font-size: 28px;
   color: var(--primary-color);
 }
-.nav-bar-icon-about {
+.nav-bar-icon-main {
   font-size: 30px;
   color: var(--primary-color);
 }
 .nav-bar-icon:hover {
   color: #e84a5f;
 }
-.nav-bar-icon-about:hover {
+.nav-bar-icon-main:hover {
   color: #e84a5f;
 }
 
@@ -217,7 +222,7 @@ div.project-presentation {
   color: #f4aab3;
 }
 
-h1.about-header {
+h1.main-header {
   font-size: 35px;
   position: fixed;
   background: white;
@@ -292,12 +297,35 @@ img.degree {
   border: 1 solid white;
   padding: 5px;
 }
+.legend {
+  font-family: var(--font-default);
+  text-align: center;
+  font-size: 25px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.legend:hover {
+  color: var(--secondary-color);
+}
+div.hashtags {
+  font-size: 20px;
+}
+div.first-row {
+  margin-top: 120px;
+  text-align: center;
+  padding-left: 15px;
+}
+
+.img-projects {
+  max-height: 250px;
+}
 @media (max-width: 1400px) {
   .project-presentation {
     text-align: center;
     margin: 0;
   }
 }
+
 @media (max-width: 1200px) {
   .image-project {
     width: 535px;
@@ -314,10 +342,15 @@ img.degree {
     text-align: center;
     padding-bottom: 10px;
   }
+  h1.main-header {
+    font-size: 30px;
+    padding-right: 60px;
+  }
+
   .nav-bar-text {
     font-size: 14px;
   }
-  .nav-bar-text-about {
+  .nav-bar-text-main {
     font-size: 14px;
   }
   .nav-bar-icon {
@@ -352,11 +385,18 @@ img.degree {
     padding-left: 0;
     text-align: center;
   }
+  div.secondary-margin {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 762px) {
   h2 {
     font-size: 18px !important;
+  }
+  h1.main-header {
+    font-size: 25px;
+    padding-right: 60px;
   }
   .icon {
     font-size: 30px;
@@ -389,6 +429,10 @@ img.degree {
   h2 {
     font-size: 15px !important;
     padding-bottom: 0px;
+  }
+  h1.main-header {
+    font-size: 25px;
+    padding-right: 60px;
   }
   .icon {
     font-size: 20px;
