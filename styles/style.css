@@ -54,11 +54,6 @@ hr {
   background-color: var(--primary-color);
 }
 
-div.container-about {
-  margin-left: 50px;
-  max-width: 1080px;
-}
-
 .self-portrait {
   border-radius: 150px;
   width: 140px;
@@ -138,7 +133,7 @@ div.row.main-row {
 }
 
 .mini-view {
-  border-radius: 150px;
+  border-radius: 100%;
   width: 140px;
   display: block;
 }
@@ -150,7 +145,7 @@ div.row.main-row {
   animation-timing-function: linear;
 }
 .mini-view-about {
-  border-radius: 150px;
+  border-radius: 100%;
   width: 160px;
   display: block;
 }
@@ -170,9 +165,10 @@ div.row.main-row {
   }
 }
 
-.project-presentation {
+div.project-presentation {
   font-family: var(--font-default);
 }
+
 .line-1 {
   margin-top: 65px;
 }
@@ -282,12 +278,20 @@ h2.work-description {
 }
 div.info-block {
   margin-left: 150px;
-  margin-top: -20px;
 }
-.degree {
+div.hobbies-block {
+  margin-left: 150px;
+}
+img.degree {
   max-width: 300px;
+  border-radius: 18%;
 }
-
+.hobbies {
+  max-width: 245px;
+  border-radius: 5%;
+  border: 1 solid white;
+  padding: 5px;
+}
 @media (max-width: 1400px) {
   .project-presentation {
     text-align: center;
@@ -298,6 +302,12 @@ div.info-block {
   .image-project {
     width: 535px;
   }
+  .project-presentation {
+    text-align: center;
+  }
+  div.project-presentation-about {
+    padding-left: 40px;
+  }
 }
 @media (max-width: 1000px) {
   h2 {
@@ -305,6 +315,9 @@ div.info-block {
     padding-bottom: 10px;
   }
   .nav-bar-text {
+    font-size: 14px;
+  }
+  .nav-bar-text-about {
     font-size: 14px;
   }
   .nav-bar-icon {
@@ -319,12 +332,25 @@ div.info-block {
   .mini-view {
     width: 100px;
   }
+  .mini-view-about {
+    width: 100px;
+  }
   .line-1 {
     margin-top: 30px;
   }
   .title {
     font-size: 18px;
     margin-left: 5px;
+  }
+  a.say-hey {
+    margin-left: 0;
+  }
+  h2.work-description {
+    text-align: left;
+  }
+  div.project-presentation-about {
+    padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -348,6 +374,15 @@ div.info-block {
   .homepage-navigation {
     margin-top: 6px;
   }
+  .title-about {
+    font-size: 20px;
+  }
+  .project-link-about {
+    font-size: 15px;
+  }
+  div.hobbies-block {
+    margin-left: 100px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -365,7 +400,6 @@ div.info-block {
   .line-1 {
     margin-top: 20px;
   }
-
   .button {
     font-size: 15px;
     padding: 0px 0px;
@@ -383,5 +417,15 @@ div.info-block {
     width: 120px !important;
     display: block !important;
     margin-left: 0 auto;
+  }
+  div.project-presentation-about {
+    text-align: right;
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  div.project-presentation-about {
+    padding-left: 60px;
   }
 }
