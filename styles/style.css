@@ -39,9 +39,10 @@ hr {
   opacity: 1 !important;
 }
 
-a {
+a,
+a.legend {
   text-decoration: none !important;
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
 }
 
 p {
@@ -302,7 +303,7 @@ img.degree {
   border: 1 solid white;
   padding: 5px;
 }
-.legend {
+div.legend {
   font-family: var(--font-default);
   text-align: center;
   font-size: 25px;
