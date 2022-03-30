@@ -227,7 +227,9 @@ div.project-presentation {
 a.important {
   color: #f4aab3;
 }
-
+.important:hover {
+  color: var(--secondary-color);
+}
 h1.main-header {
   font-size: 35px;
   position: fixed;
@@ -333,6 +335,26 @@ div.main-col {
 
 p.contact-info {
   font-size: 20px;
+}
+.contact-links {
+  font-size: 20px;
+  font-family: var(--font-default);
+  color: var(--primary-color);
+}
+
+a.email {
+  color: var(--primary-color);
+}
+a.email:hover {
+  color: var(--secondary-color);
+}
+
+.social-links {
+  font-size: 35px;
+  color: var(--primary-color);
+}
+.social-links:hover {
+  color: var(--secondary-color);
 }
 @media (max-width: 1400px) {
   .project-presentation {
