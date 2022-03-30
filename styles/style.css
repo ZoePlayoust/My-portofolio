@@ -43,6 +43,10 @@ a {
   text-decoration: none !important;
   color: var(--primary-color) !important;
 }
+
+p {
+  font-family: var(--font-default);
+}
 .button {
   display: block;
   font-size: 20px;
@@ -218,7 +222,8 @@ div.project-presentation {
   color: var(--secondary-color);
 }
 
-.important {
+.important,
+a.important {
   color: #f4aab3;
 }
 
@@ -318,6 +323,15 @@ div.first-row {
 
 .img-projects {
   max-height: 250px;
+}
+
+div.main-col {
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+p.contact-info {
+  font-size: 20px;
 }
 @media (max-width: 1400px) {
   .project-presentation {
